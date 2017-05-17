@@ -17,10 +17,6 @@ echo -e "$GREENCOLOR copy dev-server.js.$NOCOLOR"
 echo -e " "
 
 echo -e "$REDCOLOR node dev-server.js.$NOCOLOR"
-node dev-server.js
-
-rm -f "$DIR/webpack.config.js"
-rm -f "$DIR/dev-server.js"
-rm -f "$DIR/index.html"
+node dev-server.js --open --hot
 
 

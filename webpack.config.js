@@ -3,7 +3,7 @@ var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './app/main.js',
+  entry: './app/index.js',
   output: {
     path: path.resolve(__dirname, './../build/'+__dirname.split('\\').pop()),
     publicPath: '',
