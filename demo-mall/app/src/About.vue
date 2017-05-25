@@ -10,7 +10,7 @@ import global from './common/global.js'
 import router from './_router.js'
 
 export default {
-    methods:{
+     methods:{
         back(){
             router.push(global('active_path'));
         }

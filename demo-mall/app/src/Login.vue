@@ -20,10 +20,14 @@
 <script>
  import http from './common/http.js'
  import global from './common/global.js'
+ import websocket from './common/websocket.js'
  import router from './_router.js'
 
 export default {
     data(){
+        if(global('name')){
+            websocket({action: 'logout'});
+        }
         return {
             version:'1.0.0',
             username:global('name'),

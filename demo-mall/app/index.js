@@ -2,11 +2,11 @@ import Vue from 'vue'
 import VueRouter from "vue-router";
 import VueResource from 'vue-resource'
 
-
+import extend from './src/common/extend.js'
 import router from './src/_router.js'
 
 //开启debug模式
-Vue.config.debug = true;
+//Vue.config.debug = true;
 
 Vue.use(VueRouter);
 Vue.use(VueResource);

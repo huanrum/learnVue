@@ -1,5 +1,5 @@
-import firstcomponent from './firstcomponent.vue'
-import secondcomponent from './secondcomponent.vue'
+import Demo from './Demo.vue'
+import Relation from './Relation.vue'
 
 import BookMath from './book/Math.vue'
 import BookStory from './book/Story.vue'
@@ -9,14 +9,14 @@ import ShopView from './Shop/View.vue'
 
 export default [
             {
-                path: '/first',
-                name: 'first',
-                component: firstcomponent
+                path: '/demo',
+                name: 'demo',
+                component: Demo
             },
             {
-                path: '/second',
-                name: 'second',
-                component: secondcomponent
+                path: '/relation',
+                name: 'relation',
+                component: Relation
             },
             {
                 path: '/book',

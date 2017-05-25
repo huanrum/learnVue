@@ -40,12 +40,15 @@
 <script>
 import router from './_router.js'
 import global from './common/global.js'
+import websocket from './common/websocket.js'
 import menus from './modules/_router.js'
 
 export default {
   data () {
     if(Date.now() - global('login') > 10 * 60 * 1000){
       router.push('/login');
+    }else{
+      websocket({action: 'login',data: global('name')||Date.now()});
     }
     return {
       user:{
@@ -121,6 +124,8 @@ export default {
     .main-content-header{
       position: relative;
       z-index:11;
+      height:3em;
+      border-bottom: 1px solid #d3d3d3;
       .user{
         position:relative;
         display:inline-block;
@@ -140,14 +145,16 @@ export default {
       }
     }
     .main-content-content{
+      height:calc(100% - 6em);
       .main-view{
         position:relative;
         width:100%;
-        height:100%;
+        height:calc(100% - 1em);;
+        padding:0.5em 0;
       }
     }
     .main-content-footer{
-
+      height:3em;
     }
     
 }
