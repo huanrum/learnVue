@@ -11,7 +11,7 @@
             <div v-if="!!content" v-html="content"></div>
         </div>
         <div class="form-footer">
-            <a v-for="fo in footer" v-on:click="done(fo)">{{fo.name|language}}</a>
+            <button v-for="fo in footer" v-on:click="done(fo)">{{fo.name|language}}</button>
         </div>
     </div>
 
@@ -96,15 +96,12 @@ export default {
         .form-footer{
             text-align: center;
             border: 1px solid #d3d3d3;
-            padding: 0.5em;
-            a{
-                cursor: pointer;
+            button{
                 margin: 0.5em 1em;
-                background:#9999ff;
+                padding: 0.5em;
                 border: 1px solid #9999aa;
-                color:#ffffff;
                 &:hover{
-                    opacity: 0.6;
+                    color: #42b983;
                 }
             }
         }
