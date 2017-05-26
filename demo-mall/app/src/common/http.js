@@ -1,5 +1,6 @@
 
-var baseUrl = 'http://huanrum.oicp.net:23896/vue/mall/';
+//var baseUrl = 'http://huanrum.oicp.net:23896/vue/mall/';
+var baseUrl = 'http://192.168.1.248:8888/vue/mall/'
 
 if (typeof window.fetch === 'undefined') {
     window.fetch = function (url, option) {

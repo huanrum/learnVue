@@ -4,6 +4,10 @@ import VueResource from 'vue-resource'
 
 import extend from './src/common/extend.js'
 import router from './src/_router.js'
+import filters from './src/_filters.js'
+import directives from './src/_directive.js'
+
+var App = {template:'<div><router-view class="app-view"></router-view></div>'};
 
 //开启debug模式
 //Vue.config.debug = true;
@@ -11,7 +15,15 @@ import router from './src/_router.js'
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
-var App = {template:'<div><router-view class="app-view"></router-view></div>'};
+Object.keys(filters).forEach(function(key){
+    //过滤器
+    Vue.filter(key,filters[key]);
+});
+
+Object.keys(directives).forEach(function(key){
+    //过滤器
+    Vue.directive(key,directives[key]);
+});
 
 // 现在我们可以启动应用了！
 // 路由器会创建一个 App 实例，并且挂载到选择符 #app 匹配的元素上。

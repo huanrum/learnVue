@@ -7,11 +7,11 @@
       </div>
       <div class="main-menu-content">
         <ul>
-          <li v-for="menu in menus">
-            <div><router-link :to="menu.path">{{menu.name}}</router-link></div>
+          <li v-for="menu in menus" v-log="menu">
+            <div><router-link :to="menu.path">{{menu.name |language}}</router-link></div>
             <ul>
               <li v-for="sub in menu.children">
-                <div><router-link :to="sub.path">{{sub.name}}</router-link></div>
+                <div><router-link :to="sub.path">{{sub.name |language}}</router-link></div>
               </li>
             </ul>
           </li>
@@ -23,9 +23,9 @@
         <div class="user" v-on:mouseenter="userShow=true" v-on:mouseleave="userShow=false">
           <a>{{user.name}}</a>
           <div class="user-menu" v-show="userShow">
-            <div><router-link to="/login">Logout</router-link></div>
-            <div><router-link to="/about">About</router-link></div>
-            <div><router-link to="/help">Help</router-link></div>
+            <div><router-link to="/login">{{'Logout'|language}}</router-link></div>
+            <div><router-link to="/about">{{'About'|language}}</router-link></div>
+            <div><router-link to="/help">{{'Help'|language}}</router-link></div>
           </div>
         </div>
       </div>
@@ -137,6 +137,7 @@ export default {
           right: 0;
           >*{
             padding:0.2em 1em;
+            white-space:nowrap;  
             &:hover{
               opacity: 0.6;
             }

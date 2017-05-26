@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Book</h1>
+    <h1>{{'Book'|language}}</h1>
     <HttpGrid :url="url"></HttpGrid>
   </div>
 </template>

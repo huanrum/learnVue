@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div><a v-on:click="back()">Back</a></div>
+        <div><a v-on:click="back()">{{'Back'|language}}</a></div>
         About
     </div>
 </template>

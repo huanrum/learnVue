@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div><a v-on:click="back()">Back</a></div>
-        <div>version <span>{{version}}</span></div>
+        <div><a v-on:click="back()">{{'Back'|language}}</a></div>
+        <div>{{'Version'|language}} <span>{{version}}</span></div>
         Helper
     </div>
 </template>

@@ -4,7 +4,7 @@
         <table>
             <thead>
                 <tr>
-                    <th v-for="column in columns">{{column}}</th>
+                    <th v-for="column in columns">{{column |language}}</th>
                 </tr>
             </thead>
             <tbody>

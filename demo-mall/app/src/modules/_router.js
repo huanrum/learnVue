@@ -4,8 +4,11 @@ import Relation from './Relation.vue'
 import BookMath from './book/Math.vue'
 import BookStory from './book/Story.vue'
 
-import ShopList from './Shop/List.vue'
-import ShopView from './Shop/View.vue'
+import ShopList from './shop/List.vue'
+import ShopView from './shop/View.vue'
+
+import FromView from './form/View.vue'
+import FormEdit from './form/Edit.vue'
 
 export default [
             {
@@ -49,6 +52,23 @@ export default [
                         path: '/shop/view',
                         name: 'view',
                         component: ShopView
+                    },
+                ]
+            },
+            {
+                path: '/form',
+                name: 'form',
+                component:{template:'<router-view></router-view>'},
+                children:[
+                     {
+                        path: '/form/view',
+                        name: 'view',
+                        component: FromView
+                    },
+                    {
+                        path: '/form/edit',
+                        name: 'edit',
+                        component: FormEdit
                     },
                 ]
             }

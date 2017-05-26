@@ -2,18 +2,18 @@
     <div>
         <div class="login-from">
             <div class="login-row">
-                <div>UserName</div>
+                <div>{{'UserName'|language}}</div>
                 <input type="text" v-model="username">
             </div>
             <div class="login-row">
-                <div>Password</div>
+                <div>{{'Password'|language}}</div>
                 <input type="password" v-model="password">
             </div>
             <div class="login-row">
-                <button v-on:click="login()">Login</button>
+                <button v-on:click="login()">{{'Login'|language}}</button>
             </div>
         </div>
-        <div>version <span>{{version}}</span></div>
+        <div>{{'version'|language}} <span>{{version}}</span></div>
     </div>
 </template>
 

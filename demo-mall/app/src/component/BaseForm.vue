@@ -3,14 +3,15 @@
 
     <div class="form">
         <div class="form-header">
-            <label>{{title}}</label>
+            <label>{{title|language}}</label>
             <a v-if="!!close" v-on:click="done()">&times;</a>
         </div>
-        <div class="form-content" v-html="content">
-            
+        <div class="form-content">
+            <slot v-if="!content"></slot>
+            <div v-if="!!content" v-html="content"></div>
         </div>
         <div class="form-footer">
-            <a v-for="fo in footer" v-on:click="done(fo)">{{fo.name}}</a>
+            <a v-for="fo in footer" v-on:click="done(fo)">{{fo.name|language}}</a>
         </div>
     </div>
 
@@ -66,9 +67,46 @@ export default {
             min-height:6em;
             background:#f3f3f3;
             border:1px solid #d3d3d3;
+            overflow: hidden;
+            .row{
+                @for $i from 1 through 12 {
+                     @for $j from 1 through $i {
+                        &.col-#{$i}-#{$j}{
+                            float: left;
+                            width: 100/$i*$j + %;
+                        }
+                    }
+                }
+                .title{
+                    display: inline-block;
+                    width: calc(35% - 1em);
+                    padding: 0.5em;
+                } 
+                .value{
+                    display: inline-block;
+                    width: calc(65% - 2em);
+                    padding: 0.5em;
+                    input{
+                        padding: 0.5em;
+                        width: 100%;
+                    }
+                }
+            }
         }
         .form-footer{
-            
+            text-align: center;
+            border: 1px solid #d3d3d3;
+            padding: 0.5em;
+            a{
+                cursor: pointer;
+                margin: 0.5em 1em;
+                background:#9999ff;
+                border: 1px solid #9999aa;
+                color:#ffffff;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
         }
     }
 </style>
