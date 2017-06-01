@@ -7,7 +7,7 @@
 
 <script type="text/javascript">
 
-import HttpGrid from './../../component/HttpGrid.vue'
+import HttpGrid from './../../component/HttpGrid'
 
 export default {
     components:{

@@ -38,10 +38,10 @@
 </template>
 
 <script>
-import router from './_router.js'
-import global from './common/global.js'
-import websocket from './common/websocket.js'
-import menus from './modules/_router.js'
+import router from './_router'
+import global from './common/global'
+import websocket from './common/websocket'
+import menus from './modules/_router'
 
 export default {
   data () {

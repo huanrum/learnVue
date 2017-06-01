@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import websocket from './../common/websocket.js'
+import websocket from './../common/websocket'
 
 export default {
     data(){

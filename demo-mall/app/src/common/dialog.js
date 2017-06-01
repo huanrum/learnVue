@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import BaseForm from './../component/BaseForm.vue'
+import BaseForm from './../component/BaseForm'
 
 export default function(options,content){
     

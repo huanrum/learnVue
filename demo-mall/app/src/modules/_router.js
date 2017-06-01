@@ -1,14 +1,14 @@
-import Demo from './Demo.vue'
-import Relation from './Relation.vue'
+import Demo from './Demo'
+import Relation from './Relation'
 
-import BookMath from './book/Math.vue'
-import BookStory from './book/Story.vue'
+import BookMath from './book/Math'
+import BookStory from './book/Story'
 
-import ShopList from './shop/List.vue'
-import ShopView from './shop/View.vue'
+import ShopList from './shop/List'
+import ShopView from './shop/View'
 
-import FromView from './form/View.vue'
-import FormEdit from './form/Edit.vue'
+import FromView from './form/View'
+import FormEdit from './form/Edit'
 
 export default [
             {

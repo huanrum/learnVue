@@ -1,4 +1,4 @@
-import log from './directive/log.js'
+import log from './directive/log'
 
 
 export default {

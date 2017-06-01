@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import http from './../common/http.js'
+import http from './../common/http'
 
 export default {
    data() {

@@ -1,9 +1,9 @@
 
 var baseUrl =  (function(){
     if(/192\./.test(location.hostname) || location.hostname === '127.0.0.1' || location.hostname === 'localhost'){
-        return location.protocol +'//'+ location.hostname +':8888/react/mall/';
+        return location.protocol +'//'+ location.hostname +':8888/vue/mall/';
     }else{
-        return 'http://huanrum.oicp.net:23896/react/mall/';
+        return 'http://huanrum.oicp.net:23896/vue/mall/';
     }
 })();
 

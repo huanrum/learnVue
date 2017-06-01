@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import BaseForm from './../../component/BaseForm.vue'
+import BaseForm from './../../component/BaseForm'
 
 function footer(data) {
     return [

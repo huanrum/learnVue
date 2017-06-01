@@ -1,5 +1,5 @@
-import global from './../common/global.js'
-import extend from './../common/extend.js'
+import global from './../common/global'
+import extend from './../common/extend'
 
 var languages = ['en','zh'];
 

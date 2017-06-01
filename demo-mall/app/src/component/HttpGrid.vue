@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import http from './../common/http.js'
+import http from './../common/http'
 
 function getColumns(list){
     var temp = {};
