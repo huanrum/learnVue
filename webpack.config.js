@@ -42,6 +42,7 @@ module.exports = {
   plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
+            title: 'Vue '+ __dirname.split('\\').pop(),
             template: path.resolve(__dirname, 'index.html'),
             inject: true
         })
