@@ -1,6 +1,6 @@
-var path = require('path')
+//var path = require('path')
 var webpack = require('webpack')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+//var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './app/index.js',
@@ -46,12 +46,12 @@ module.exports = {
     ]
   },
   plugins: [
-        new HtmlWebpackPlugin({
-            filename: 'index.html',
-            title: 'Vue '+ __dirname.split('\\').pop(),
-            template: path.resolve(__dirname, 'index.html'),
-            inject: true
-        })
+        // new HtmlWebpackPlugin({
+        //     filename: 'index.html',
+        //     title: 'Vue '+ __dirname.split('\\').pop(),
+        //     template: path.resolve(__dirname, 'index.html'),
+        //     inject: true
+        // })
   ],
   devServer: {
     historyApiFallback: true,

@@ -10,7 +10,7 @@ import directives from './src/_directive'
 var App = {template:'<div><router-view class="app-view"></router-view></div>'};
 
 //开启debug模式
-//Vue.config.debug = true;
+Vue.config.debug = true;
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
