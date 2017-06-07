@@ -2,7 +2,7 @@
   <div>
     <div class="main-menu">
       <div class="main-menu-header">
-        <img src="./../assets/logo.png">
+        <img src="assets/logo.png">
         <div>Demo Mall</div>
       </div>
       <div class="main-menu-content">
