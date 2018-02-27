@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import global from './common/global'
-import router from './_router'
+import global from './common/global';
+import router from './_router';
 
 export default {
      methods:{

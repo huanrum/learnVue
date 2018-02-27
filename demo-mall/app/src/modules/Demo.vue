@@ -4,7 +4,7 @@
     <a> written by {{ author }} </a>
     <p> 感谢 <a href="https://github.com/showonne">showonne</a>大神的技术指导</p>
     <ul>
-        <li v-for="article in articles">
+        <li v-for="article in articles" :key="article.name">
            {{article.name}}
         </li>
     </ul>
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import http from './../common/http'
+import http from './../common/http';
 
 export default {
    data() {

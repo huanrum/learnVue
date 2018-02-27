@@ -1,14 +1,14 @@
-import Demo from './Demo'
-import Relation from './Relation'
+import Demo from './Demo';
+import Relation from './Relation';
 
-import BookMath from './book/Math'
-import BookStory from './book/Story'
+import BookMath from './book/Math';
+import BookStory from './book/Story';
 
-import ShopList from './shop/List'
-import ShopView from './shop/View'
+import ShopList from './shop/List';
+import ShopView from './shop/View';
 
-import FromView from './form/View'
-import FormEdit from './form/Edit'
+import FromView from './form/View';
+import FormEdit from './form/Edit';
 
 export default [
             {
@@ -69,7 +69,7 @@ export default [
                         path: '/form/edit',
                         name: 'edit',
                         component: FormEdit
-                    },
+                    }
                 ]
             }
         ];

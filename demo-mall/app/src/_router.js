@@ -1,13 +1,13 @@
 
 import VueRouter from "vue-router";
 
-import Login from './Login'
-import About from './About'
-import Help from './Help'
-import Main from './Main'
+import Login from './Login';
+import About from './About';
+import Help from './Help';
+import Main from './Main';
 
-import global from './common/global'
-import children from './modules/_router'
+import global from './common/global';
+import children from './modules/_router';
 
 var beforeEnter = (to, from, next) => {
     global('active_path',from.path);

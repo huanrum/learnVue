@@ -18,10 +18,10 @@
 </template>
 
 <script>
- import http from './common/http'
- import global from './common/global'
- import websocket from './common/websocket'
- import router from './_router'
+ import http from './common/http';
+ import global from './common/global';
+ import websocket from './common/websocket';
+ import router from './_router';
 
 export default {
     data(){

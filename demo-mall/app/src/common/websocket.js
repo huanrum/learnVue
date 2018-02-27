@@ -1,6 +1,6 @@
 
-import http from './http'
-import global from './global'
+import http from './http';
+import global from './global';
 
 var ws = null,sendMessage = [];
 var data = { friends: [] };

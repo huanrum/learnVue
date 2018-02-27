@@ -1,13 +1,15 @@
-import Vue from 'vue'
+import Vue from 'vue';
 import VueRouter from "vue-router";
-import VueResource from 'vue-resource'
+import VueResource from 'vue-resource';
 
-import extend from './src/common/extend'
-import router from './src/_router'
-import filters from './src/_filters'
-import directives from './src/_directive'
+import extend from './src/common/extend';
+import router from './src/_router';
+import filters from './src/_filters';
+import directives from './src/_directive';
 
-var App = {template:'<div><router-view class="app-view"></router-view></div>'};
+var App = {
+    template:'<div><router-view class="app-view"></router-view></div>'
+};
 
 //开启debug模式
 Vue.config.debug = true;

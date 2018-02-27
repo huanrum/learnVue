@@ -4,23 +4,23 @@
         <table>
             <thead>
                 <tr>
-                    <th v-for="column in columns">{{column |language}}</th>
+                    <th v-for="column in columns" :key="column">{{column |language}}</th>
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="item in dataList">
-                    <td v-for="column in columns">{{item[column]}}</td>
+                <tr v-for="item in dataList" :key="item.id">
+                    <td v-for="column in columns" :key="column">{{item[column]}}</td>
                 </tr>
             </tbody>
         </table>
         <div class="paginate">
-            <a v-for="page in totalPage" v-bind:class="{active:page===pageNumber}" v-on:click="refresh(page)">{{page}}</a>
+            <a v-for="page in totalPage" :key="page" :class="{active:page===pageNumber}" @click="refresh(page)">{{page}}</a>
         </div>
     </div>
 </template>
 
 <script>
-import http from './../common/http'
+import http from './../common/http';
 
 function getColumns(list){
     var temp = {};

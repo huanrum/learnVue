@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import BaseForm from './../../component/BaseForm'
+import BaseForm from './../../component/BaseForm';
 
 export default {
     components: {

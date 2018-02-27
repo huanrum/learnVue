@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import BaseForm from './../../component/BaseForm'
+import BaseForm from './../../component/BaseForm';
 
 function footer(data) {
     return [

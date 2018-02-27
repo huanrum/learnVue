@@ -1,5 +1,5 @@
 
-import language from './filter/language'
+import language from './filter/language';
 
 
 export default {

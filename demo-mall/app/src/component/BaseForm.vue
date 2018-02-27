@@ -4,14 +4,14 @@
     <div class="form">
         <div class="form-header">
             <label>{{title|language}}</label>
-            <a v-if="!!close" v-on:click="done()">&times;</a>
+            <a v-if="!!close" @click="done()">&times;</a>
         </div>
         <div class="form-content">
             <slot v-if="!content"></slot>
             <div v-if="!!content" v-html="content"></div>
         </div>
         <div class="form-footer">
-            <button v-for="fo in footer" v-on:click="done(fo)">{{fo.name|language}}</button>
+            <button v-for="fo in footer" :key="fo.name" @click="done(fo)">{{fo.name|language}}</button>
         </div>
     </div>
 

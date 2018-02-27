@@ -1,4 +1,4 @@
-import log from './directive/log'
+import log from './directive/log';
 
 
 export default {

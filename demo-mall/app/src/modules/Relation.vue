@@ -12,7 +12,7 @@
             <div class="title">{{active.id}}</div>
             <div class="content">
                 <div class="old">
-                    <div v-for="am in active.messageList" :class="{right:am.get}">{{am.value}}</div>
+                    <div v-for="am in active.messageList" :key="$index" :class="{right:am.get}">{{am.value}}</div>
                 </div>
                 <div class="new">
                     <textarea v-model="message"></textarea>
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import websocket from './../common/websocket'
+import websocket from './../common/websocket';
 
 export default {
     data(){

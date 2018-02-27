@@ -7,10 +7,10 @@
       </div>
       <div class="main-menu-content">
         <ul>
-          <li v-for="menu in menus" v-log="menu">
+          <li v-for="menu in menus" v-log="menu" :key="menu.name">
             <div><router-link :to="menu.path">{{menu.name |language}}</router-link></div>
             <ul>
-              <li v-for="sub in menu.children">
+              <li v-for="sub in menu.children" :key="sub.name">
                 <div><router-link :to="sub.path">{{sub.name |language}}</router-link></div>
               </li>
             </ul>
@@ -38,10 +38,10 @@
 </template>
 
 <script>
-import router from './_router'
-import global from './common/global'
-import websocket from './common/websocket'
-import menus from './modules/_router'
+import router from './_router';
+import global from './common/global';
+import websocket from './common/websocket';
+import menus from './modules/_router';
 
 export default {
   data () {

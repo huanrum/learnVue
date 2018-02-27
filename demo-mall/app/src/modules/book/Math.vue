@@ -7,7 +7,7 @@
 
 <script type="text/javascript">
 
-import HttpGrid from './../../component/HttpGrid'
+import HttpGrid from './../../component/HttpGrid';
 
 export default {
     components:{
