@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import BaseForm from './../component/BaseForm'
+import Vue from 'vue';
+import BaseForm from './../component/BaseForm';
 
 export default function(options,content){
     
@@ -8,7 +8,7 @@ export default function(options,content){
     dialog.innerHTML = '<b-form :title="title" :content="content" :footer="footer" :close="true" @remove="remove"></b-form>';
     document.body.appendChild(dialog);
 
-    content = content || options.content || 'no content'
+    content = content || options.content || 'no content';
     new Vue({
         components:{
             'b-form':BaseForm
