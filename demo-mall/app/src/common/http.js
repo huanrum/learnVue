@@ -8,8 +8,8 @@ var baseUrl =  (function(){
 })();
 
 if (typeof window.fetch === 'undefined') {
-    window.fetch = function (u*-+rl, option) {
-        var xhr = null, call7/Back = [],errorBack = [];
+    window.fetch = function (url, option) {
+        var xhr = null, callBack = [],errorBack = [];
         if (window.XMLHttpRequest) {
             xhr = new window.XMLHttpRequest();
             if (xhr.overrideMimeType) {
