@@ -1,5 +1,4 @@
 import global from './../common/global';
-import extend from './../common/extend';
 
 var languages = ['en','zh'];
 
@@ -62,7 +61,7 @@ var formData = {
 };
 
 
-var data = extend({},baseData,loginData,menuData,mainData,bookData,formData);
+var data = Object.assign({},baseData,loginData,menuData,mainData,bookData,formData);
 
 export default function(value,parameters){
     var lang = global('language') || 'en';

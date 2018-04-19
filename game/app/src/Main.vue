@@ -69,6 +69,8 @@ export default {
     z-index: 11;
     padding: 0.2em 1em;
     border-bottom: 1px solid #d3d3d3;
+    white-space: nowrap;
+    overflow: auto;
     .main-menu{
       display: inline-block;
       margin: 0.25em 0.5em;

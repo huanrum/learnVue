@@ -6,7 +6,7 @@ DIR=`pwd`
 NAME=$(basename "$DIR")
 TITLE="{headtitle}"
 
-cp "$DIR/../index.html" "$DIR/../build/$NAME/index.html"
+cp "$DIR/../index.template" "$DIR/../build/$NAME/index.html"
 sed -i "s/$TITLE/$NAME/g" "$DIR/../build/$NAME/index.html"
 echo -e "$GREENCOLOR copy index.html.$NOCOLOR"
 echo -e " "
