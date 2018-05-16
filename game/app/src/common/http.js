@@ -1,11 +1,5 @@
 
-var baseUrl =  (function(){
-    if(/192\./.test(location.hostname) || location.hostname === '127.0.0.1' || location.hostname === 'localhost'){
-        return location.protocol +'//'+ location.hostname +':8888/vue/mall/';
-    }else{
-        return 'http://huanrum.oicp.net:23896/vue/mall/';
-    }
-})();
+var baseUrl = location.origin + '/vue/mall/';
 
 if (typeof window.fetch === 'undefined') {
     window.fetch = function (url, option) {
@@ -25,7 +19,7 @@ if (typeof window.fetch === 'undefined') {
         return {
             then: then,
             error:error
-        }
+        };
 
         function onreadystatechange() {
             var data = {
